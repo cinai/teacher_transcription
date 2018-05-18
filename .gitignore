@@ -1,0 +1,11 @@
+# directories
+output/
+splitted/
+wav_files/
+
+
+# files
+*.pyc
+*.svg
+*.csv
+*.wav
