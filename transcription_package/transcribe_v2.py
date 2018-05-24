@@ -91,8 +91,8 @@ def transcribe_folder(name,output_path):
     for file in files(name):
         file_path = join(name,file)
         try:
-            if(os.path.isfile(join(output_path,file[:-4]+'.txt'))):
-                print('Ya esta')
+            if os.path.isfile(join(output_path,'transcription',file[:-4]+'.txt')):
+                print 'Ya esta ' + str(file)
                 continue
         except Exception, e:
             print 'Error '+str(file)+': '+e
